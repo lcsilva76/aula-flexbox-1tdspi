@@ -12,7 +12,7 @@ body{
     flex-direction: column;
 }
 
-header{
+body>header{
     min-height: 120px;
     width: 100%;
     padding: 0px 40px;
@@ -53,23 +53,67 @@ nav ul li a:hover{
 main{
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
 section{
     /* border: 2px solid red; */
-    flex-grow: 1;
+    flex: 1 1 300px;
 }
 
 section h2{
     text-align: center;
 }
 
-.fem{
-    background-color: lightgoldenrodyellow;
+.masc{
+    padding: 20px;
 }
 
-footer{
+.masc h2{
+    margin-bottom: 15px;
+}
+
+.masc p{
+    margin: 10px 0px;
+}
+
+.masc img{
+    max-width: 100%;
+}
+
+.fem{
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+}
+
+.fem>p{
+    padding: 10px 0px;
+}
+
+article{
+    background-color: #fff;
+    padding: 10px;
+}
+
+article>header>h1{
+    text-align: center;
+    padding: 10px;
+}
+
+article>p{
+    padding: 10px;
+    text-align: justify;
+}
+
+article>footer>p{
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+body>footer{
     background-color: #232;
     min-height: 50px;
     display: flex;
@@ -77,6 +121,6 @@ footer{
     align-items: center;
 }
 
-footer p{
+body>footer p{
     color: #fff;
 }

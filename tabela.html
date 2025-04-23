@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        table{
+            width: 70%;
+            margin: auto;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Luis Carlos</td>
+                <td>98745-2154</td>
+                <td>Rua Tal, 15</td>
+                <td>lsivla@fiap.com.br</td>
+            </tr>
+            <tr>
+                <!-- <td>Luis Carlos</td> -->
+                <td>98654-2987</td>
+                <td>Rua Outra, 35</td>
+                <td>lsivla@gmail.com</td>
+            </tr>
+            <tr>
+                <td>José Francisco</td>
+                <td>98654-1111</td>
+                <td>Rua Sei lá, 17</td>
+                <td>jotaf@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Lista de funcionários 2024</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
